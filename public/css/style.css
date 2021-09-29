@@ -61,6 +61,24 @@ ul li{
     transform: rotate(90deg);
 }
 
+.instagram{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.linkedin{
+    position: fixed;
+    bottom: 5%;
+    right: 8%;
+}
+
+.github{
+    position: fixed;
+    bottom: 5%;
+    right: 11%;
+}
+
 .lienVoyant{
     background: transparent;
     color: white;
@@ -80,15 +98,14 @@ ul li{
 
 /* home */
 
-.container-home{
+.container-isabel{
     width: 100%;
     height: 100vh;
     position: relative;
     z-index: 1;
-    background-color: rgb(194, 39, 47, 255);
+    background-color: rgb(228, 176, 33, 255);
     display: flex;
     align-items: center;
-    padding-left: 15%;
 }
 
 button{
@@ -169,6 +186,34 @@ button:hover i {
     font-weight: 100;
 }
 
+.div-slide{
+    padding-left: 10%;
+}
+
+.img-isabel{
+    position: absolute;
+    width: 60%;
+    right: 5%;
+}
+
+.slider .container-isabel{
+    display: none;
+}
+
+.container-isabel.active{
+    display: flex;
+    animation: fade 0.8s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 /* fin home */
 
 
@@ -200,7 +245,7 @@ button:hover i {
 }
 
 .black{
-    background-color: black;
+    background-color: grey;
     width: 100%;
     height: 100vh;
 }

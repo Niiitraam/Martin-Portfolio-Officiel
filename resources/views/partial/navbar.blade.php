@@ -24,5 +24,17 @@
             <a href="" class="contact lienVoyant contactVoyant">Contact</a>
             <a href="" class="contact lienNonVoyant contactNonVoyant">Contact</a>
         </li>
+        <li class="li-nav">
+            <a href="" class="instagram lienVoyant instagramVoyant"><i class="fab fa-instagram"></i></a>
+            <a href="" class="instagram lienNonVoyant instagramNonVoyant"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="li-nav">
+            <a href="" class="linkedin lienVoyant linkedinVoyant"><i class="fab fa-linkedin"></i></a>
+            <a href="" class="linkedin lienNonVoyant linkedinNonVoyant"><i class="fab fa-linkedin"></i></a>
+        </li>
+        <li class="li-nav">
+            <a href="" class="github lienVoyant githubVoyant"><i class="fab fa-github"></i></a>
+            <a href="" class="github lienNonVoyant githubNonVoyant"><i class="fab fa-github"></i></a>
+        </li>
     </ul>
 </nav>

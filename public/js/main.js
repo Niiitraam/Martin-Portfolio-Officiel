@@ -44,6 +44,10 @@ var parcours = document.querySelector('.parcoursVoyant');
 var services = document.querySelector('.servicesVoyant');
 var portfolio = document.querySelector('.portfolioVoyant');
 var contact = document.querySelector('.contactVoyant');
+var instagram = document.querySelector('.instagramVoyant');
+var linkedin = document.querySelector('.linkedinVoyant');
+var github = document.querySelector('.githubVoyant');
+
 
 var homeNon = document.querySelector('.homeNonVoyant');
 var aboutNon = document.querySelector('.aboutNonVoyant');
@@ -51,6 +55,9 @@ var parcoursNon = document.querySelector('.parcoursNonVoyant');
 var servicesNon = document.querySelector('.servicesNonVoyant');
 var portfolioNon = document.querySelector('.portfolioNonVoyant');
 var contactNon = document.querySelector('.contactNonVoyant');
+var instagramNon = document.querySelector('.instagramNonVoyant');
+var linkedinNon = document.querySelector('.linkedinNonVoyant');
+var githubNon = document.querySelector('.githubNonVoyant');
 
 const handleIntersect = function(entries, observer) {
     entries.forEach(function(entry) {
@@ -73,6 +80,15 @@ const handleIntersect = function(entries, observer) {
             contact.style.color = "black";
             contactNon.style.color = "white";
             contactNon.style.backgroundColor = "black";
+            instagram.style.color = "black";
+            instagramNon.style.color = "white";
+            instagramNon.style.backgroundColor = "black";
+            linkedin.style.color = "black";
+            linkedinNon.style.color = "white";
+            linkedinNon.style.backgroundColor = "black";
+            github.style.color = "black";
+            githubNon.style.color = "white";
+            githubNon.style.backgroundColor = "black";
         }else{
             home.style.color = "white";
             homeNon.style.color = "black";
@@ -92,6 +108,15 @@ const handleIntersect = function(entries, observer) {
             contact.style.color = "white";
             contactNon.style.color = "black";
             contactNon.style.backgroundColor = "white";
+            instagram.style.color = "white";
+            instagramNon.style.color = "black";
+            instagramNon.style.backgroundColor = "white";
+            linkedin.style.color = "white";
+            linkedinNon.style.color = "black";
+            linkedinNon.style.backgroundColor = "white";
+            github.style.color = "white";
+            githubNon.style.color = "black";
+            githubNon.style.backgroundColor = "white";
         }
     })
 

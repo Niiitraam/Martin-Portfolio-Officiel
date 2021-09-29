@@ -1,1 +1,1 @@
-<div class="black"></div>
+<div class="black section-black"></div>
