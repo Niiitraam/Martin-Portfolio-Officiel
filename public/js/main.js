@@ -1,3 +1,5 @@
+// navbar
+
 var voyant = document.querySelectorAll('.lienVoyant');
 var nonVoyant = document.querySelectorAll('.lienNonVoyant');
 
@@ -126,3 +128,35 @@ const observer = new IntersectionObserver(handleIntersect,options)
 document.querySelectorAll('.section-black').forEach(function(o){
     observer.observe(o); 
 })
+
+//slider
+const items = document.querySelectorAll('.container-isabel');
+const nbSlide = items.length;
+const suivant = document.querySelector('.right');
+const precedant = document.querySelector('.left');
+let count = 0;
+function slideSuivante(){
+    items[count].classList.remove('active');
+    if(count < nbSlide - 1){
+        count++;
+    }else{
+        count = 0;
+    }
+
+    items[count].classList.add('active');
+}
+
+suivant.addEventListener('click', slideSuivante);
+
+function slidePrecedente(){
+    items[count].classList.remove('active');
+    if(count > 0){
+        count--;
+    }else{
+        count = nbSlide -1;
+    }
+
+    items[count].classList.add('active')
+}
+
+precedant.addEventListener('click', slidePrecedente);

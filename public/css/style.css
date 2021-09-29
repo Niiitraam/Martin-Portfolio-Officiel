@@ -205,13 +205,30 @@ button:hover i {
     animation: fade 0.8s;
 }
 
+
 @keyframes fade{
     from{
-        opacity: 0;
+        right: -100%;
     }
     to{
-        opacity: 1;
+        right: 0;
     }
+}
+
+.cont-btn{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 2;
+}
+
+.btn-nav{
+    font-size: 45px;
+    margin: 0 15px;
+    cursor: pointer;
 }
 
 /* fin home */
