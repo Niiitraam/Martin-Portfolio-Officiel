@@ -3,6 +3,10 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* navbar */
 
 .container-navbar{
@@ -44,7 +48,7 @@ ul li{
 .about{
     position: fixed;
     bottom: 5%;
-    left: 48%;
+    left: 47%;
 }
 
 .portfolio{
@@ -109,7 +113,7 @@ ul li{
 }
 
 button{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background-color: transparent;
     color: white;
@@ -118,12 +122,12 @@ button{
     transform: skew(-15deg);
     cursor: pointer;
     transition: 0.2s;
-    box-shadow: 9px 9px 0px black;
+    box-shadow: 6px 6px 0px black;
 }
 
 button:hover{
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 span.arrow{
@@ -178,7 +182,7 @@ button:hover i {
 
 .h-nom{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 3%;
 }
 
@@ -192,7 +196,7 @@ button:hover i {
 
 .img-isabel{
     position: absolute;
-    width: 60%;
+    width: 70%;
     right: 5%;
 }
 
@@ -221,14 +225,35 @@ button:hover i {
     justify-content: center;
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 20%;
     z-index: 2;
 }
 
 .btn-nav{
-    font-size: 45px;
+    font-size: 30px;
     margin: 0 15px;
     cursor: pointer;
+    color: white;
+}
+
+
+.text-slide{
+    font-size: 30px;
+    color: white;
+}
+
+.paragraphe-about{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 20%;
+}
+
+.div-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 /* fin home */
@@ -240,6 +265,11 @@ button:hover i {
     width: 100%;
     height: 100vh;
     background: black;
+}
+
+.mot-gras-about{
+    font-size: 30px;
+    text-transform: uppercase;
 }
 
 /* fin about */
@@ -262,7 +292,92 @@ button:hover i {
 }
 
 .black{
-    background-color: grey;
+    background-color: #c0c0c0;
     width: 100%;
     height: 100vh;
 }
+
+/* contact */
+
+.container-contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.div-gauche{
+    background-color: #c0c0c0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-droite{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-contact{
+    background-color: #c0c0c0;
+    border: none;
+    border-bottom: 2px solid black;
+    padding-top: 5%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: white;
+}
+
+.input-contact:focus{
+    outline: none;
+}
+
+.input-contact::placeholder{
+    color: black;
+    font-size: 25px;
+}
+
+.div-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.h-contact{
+    font-size: 45px;
+}
+
+.h-2-contact{
+    font-size: 60px;
+}
+
+.btn-contact{
+    margin-top: 5%;
+}
+
+.element-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.icon-contact{
+    font-size: 80px;
+}
+
+.espacement-contact{
+    margin-bottom: 25%;
+    margin-top: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+/* fin contact */

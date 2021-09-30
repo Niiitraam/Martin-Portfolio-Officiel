@@ -15,9 +15,9 @@
             </div>
             <img src="{{asset('image/mockup-isabel.png')}}" class="img-isabel" alt="">
         </div>
-        <div class="container-isabel" style="background-color: aqua">
+        <div class="container-isabel" style="background-color: #8a1836">
             <div class="div-slide">
-                <h3 class="h-nom">Isabel Gomez Studio<span class="span-nom"> - WebSite</span></h3>
+                <h3 class="h-nom">Le monde du vin<span class="span-nom"> - WebSite</span></h3>
                 <button>
                     <span>View Project</span>
                     <span class="arrow">
@@ -32,7 +32,7 @@
     </div>
     <div class="cont-btn">
         <div class="btn-nav left"><</div>
-        <p style="font-size: 30px">1/4</p>
+        <p class="text-slide">1/4</p>
         <div class="btn-nav right">></div>
     </div>
 </div>

@@ -13,8 +13,9 @@
     @include('pages/home')
     @include('pages/about')
     @include('pages/parcours')
-    @include('pages/black')
+    @include('pages/service')
     @include('pages/white')
+    @include('pages/contact')
 
     <script src="{{asset("js/main.js")}}"></script>
 </body>
