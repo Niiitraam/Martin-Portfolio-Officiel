@@ -27,6 +27,11 @@ ul li{
     list-style: none;
 }
 
+
+.container-navbar .openMenu{
+    display: none;
+}
+
 .home{
     position: fixed;
     top: 5%;
@@ -291,12 +296,53 @@ button:hover i {
     height: 100vh;
 }
 
-.black{
+/* service */
+
+.container-service{
     background-color: #c0c0c0;
     width: 100%;
     height: 100vh;
 }
 
+.container-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.div-2-element{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titre-service{
+    font-size: 30px;
+    text-align: center;
+}
+
+.element-gauche{
+    padding-right: 3%;
+}
+
+.element-droite{
+    padding-left: 3%;
+
+}
+
+.p-service{
+    text-align: center;
+}
+
+.col-2-service{
+    padding-top: 5%;
+}
+
+/* fin service */
 /* contact */
 
 .container-contact{
@@ -381,3 +427,130 @@ button:hover i {
 }
 
 /* fin contact */
+
+@media screen and (min-device-width: 150px) and (max-device-width:600px){
+    .container-navbar{
+        background-color: black;
+        color: #ffffff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+    }
+    .ul-navbar{
+        height: 60vh;
+        position: fixed;
+        top: 10vh;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        transition: top 1s ease;
+        display: none;
+        padding-left: 0;
+        transition: 1s;
+    }
+    .li-nav{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        text-align: center;
+    }
+    .ouverture-navbar{
+        display: flex;
+        transition: 1s;
+    }
+    .lienNonVoyant{
+        display: none;
+    }
+    .home{
+        position: unset;
+        font-size: 20px;
+    }
+    .contact{
+        position: unset;
+        font-size: 20px;
+    }
+    .parcours{
+        position: unset;
+        font-size: 20px;
+    }
+    .about{
+        position: unset;
+        font-size: 20px;
+    }
+    .portfolio{
+        position: unset;
+        font-size: 20px;
+        transform: rotate(0deg);
+    }
+    .services{
+        position: unset;
+        font-size: 20px;
+        transform: rotate(0deg);
+    }
+    nav .ul-navbar li a{
+        padding: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    nav .openMenu{
+        font-size: 2rem;
+        margin: 20px;
+    }
+    .container-navbar .openMenu{
+        display: block;
+    }
+    .div-slide{
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-isabel{
+        right: unset;
+        width: 80%;
+        position: unset;
+    }
+    .container-isabel.active{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .cont-btn{
+        left: 0;
+        top: 80%;
+        width: 100%;
+    }
+    button{
+        margin-top: 5%;
+    }
+    .container-contact{
+        display: block;
+        height: 90vh;
+    }
+    .div-gauche{
+        height: 58vh;
+    }
+    .div-droite{
+        height: 32vh;
+        flex-direction: column;
+        background-color: #c0c0c0;
+    }
+    .icon-contact{
+        font-size: 40px;
+    }
+    .h-contact{
+        font-size: 30px;
+    }
+    .h2-contact{
+        font-size: 35px;
+    }
+    .element-contact{
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+}

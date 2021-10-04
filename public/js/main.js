@@ -160,3 +160,14 @@ function slidePrecedente(){
 }
 
 precedant.addEventListener('click', slidePrecedente);
+
+// ouverture navbar
+
+var openMenu = document.querySelector('.openMenu');
+var ulNavbar = document.querySelector('.ul-navbar');
+
+openMenu.addEventListener('click', open);
+
+function open(){
+    ulNavbar.classList.toggle('ouverture-navbar');
+}

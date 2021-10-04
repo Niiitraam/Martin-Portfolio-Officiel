@@ -1,4 +1,5 @@
 <nav class="container-navbar">
+    <i class="fas fa-bars openMenu"></i>
     <ul class="ul-navbar">
         <li class="li-nav">
             <a href="/" class="home lienVoyant homeVoyant">Home</a>
