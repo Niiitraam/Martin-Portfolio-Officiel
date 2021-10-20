@@ -14,8 +14,8 @@
             <a href="" class="parcours lienNonVoyant parcoursNonVoyant">Parcours</a>
         </li>
         <li class="li-nav">
-            <a href="" class="services lienVoyant servicesVoyant">Services</a>
-            <a href="" class="services lienNonVoyant servicesNonVoyant">Services</a>
+            <a href="#service" class="services lienVoyant servicesVoyant">Services</a>
+            <a href="#service" class="services lienNonVoyant servicesNonVoyant">Services</a>
         </li>
         <li class="li-nav">
             <a href="" class="portfolio lienVoyant portfolioVoyant">PortFolio</a>

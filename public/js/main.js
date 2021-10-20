@@ -63,62 +63,67 @@ var githubNon = document.querySelector('.githubNonVoyant');
 
 const handleIntersect = function(entries, observer) {
     entries.forEach(function(entry) {
-        if (entry.intersectionRatio > ratio) {
-            home.style.color = "black";
-            homeNon.style.color = "white";
-            homeNon.style.backgroundColor = "black";
-            about.style.color = "black";
-            aboutNon.style.color = "white";
-            aboutNon.style.backgroundColor = "black";
-            parcours.style.color = "black";
-            parcoursNon.style.color = "white";
-            parcoursNon.style.backgroundColor = "black";
-            services.style.color = "black";
-            servicesNon.style.color = "white";
-            servicesNon.style.backgroundColor = "black";
-            portfolio.style.color = "black";
-            portfolioNon.style.color = "white";
-            portfolioNon.style.backgroundColor = "black";
-            contact.style.color = "black";
-            contactNon.style.color = "white";
-            contactNon.style.backgroundColor = "black";
-            instagram.style.color = "black";
-            instagramNon.style.color = "white";
-            instagramNon.style.backgroundColor = "black";
-            linkedin.style.color = "black";
-            linkedinNon.style.color = "white";
-            linkedinNon.style.backgroundColor = "black";
-            github.style.color = "black";
-            githubNon.style.color = "white";
-            githubNon.style.backgroundColor = "black";
-        }else{
-            home.style.color = "white";
-            homeNon.style.color = "black";
-            homeNon.style.backgroundColor = "white";
-            about.style.color = "white";
-            aboutNon.style.color = "black";
-            aboutNon.style.backgroundColor = "white";
-            parcours.style.color = "white";
-            parcoursNon.style.color = "black";
-            parcoursNon.style.backgroundColor = "white";
-            services.style.color = "white";
-            servicesNon.style.color = "black";
-            servicesNon.style.backgroundColor = "white";
-            portfolio.style.color = "white";
-            portfolioNon.style.color = "black";
-            portfolioNon.style.backgroundColor = "white";
-            contact.style.color = "white";
-            contactNon.style.color = "black";
-            contactNon.style.backgroundColor = "white";
-            instagram.style.color = "white";
-            instagramNon.style.color = "black";
-            instagramNon.style.backgroundColor = "white";
-            linkedin.style.color = "white";
-            linkedinNon.style.color = "black";
-            linkedinNon.style.backgroundColor = "white";
-            github.style.color = "white";
-            githubNon.style.color = "black";
-            githubNon.style.backgroundColor = "white";
+        if(window.matchMedia("(min-width: 600px)").matches){
+            if (entry.intersectionRatio > ratio) {
+                home.style.color = "black";
+                homeNon.style.color = "white";
+                homeNon.style.backgroundColor = "black";
+                about.style.color = "black";
+                aboutNon.style.color = "white";
+                aboutNon.style.backgroundColor = "black";
+                parcours.style.color = "black";
+                parcoursNon.style.color = "white";
+                parcoursNon.style.backgroundColor = "black";
+                services.style.color = "black";
+                servicesNon.style.color = "white";
+                servicesNon.style.backgroundColor = "black";
+                portfolio.style.color = "black";
+                portfolioNon.style.color = "white";
+                portfolioNon.style.backgroundColor = "black";
+                contact.style.color = "black";
+                contactNon.style.color = "white";
+                contactNon.style.backgroundColor = "black";
+                instagram.style.color = "black";
+                instagramNon.style.color = "white";
+                instagramNon.style.backgroundColor = "black";
+                linkedin.style.color = "black";
+                linkedinNon.style.color = "white";
+                linkedinNon.style.backgroundColor = "black";
+                github.style.color = "black";
+                githubNon.style.color = "white";
+                githubNon.style.backgroundColor = "black";
+            }else{
+                home.style.color = "white";
+                homeNon.style.color = "black";
+                homeNon.style.backgroundColor = "white";
+                about.style.color = "white";
+                aboutNon.style.color = "black";
+                aboutNon.style.backgroundColor = "white";
+                parcours.style.color = "white";
+                parcoursNon.style.color = "black";
+                parcoursNon.style.backgroundColor = "white";
+                services.style.color = "white";
+                servicesNon.style.color = "black";
+                servicesNon.style.backgroundColor = "white";
+                portfolio.style.color = "white";
+                portfolioNon.style.color = "black";
+                portfolioNon.style.backgroundColor = "white";
+                contact.style.color = "white";
+                contactNon.style.color = "black";
+                contactNon.style.backgroundColor = "white";
+                instagram.style.color = "white";
+                instagramNon.style.color = "black";
+                instagramNon.style.backgroundColor = "white";
+                linkedin.style.color = "white";
+                linkedinNon.style.color = "black";
+                linkedinNon.style.backgroundColor = "white";
+                github.style.color = "white";
+                githubNon.style.color = "black";
+                githubNon.style.backgroundColor = "white";
+            }
+        }
+        else{
+            console.log('x')
         }
     })
 

@@ -117,7 +117,7 @@ ul li{
     align-items: center;
 }
 
-button{
+a.button-home{
     font-size: 15px;
     font-weight: bold;
     background-color: transparent;
@@ -128,9 +128,10 @@ button{
     cursor: pointer;
     transition: 0.2s;
     box-shadow: 6px 6px 0px black;
+    text-decoration: none;
 }
 
-button:hover{
+a.button-home:hover{
     padding-right: 30px;
     padding-left: 30px;
 }
@@ -161,15 +162,15 @@ span.arrow i:nth-child(3){
     animation-delay: 1s;
 }
 
-button:hover i:nth-child(2){
+a.button-home:hover i:nth-child(2){
     right: -10px;
 }
 
-button:hover i:nth-child(3){
+a.button-home:hover i:nth-child(3){
     right: -20px;
 }
 
-button:hover i {
+a.button-home:hover i {
     animation:color 2s infinite linear;
 }
 
@@ -352,7 +353,7 @@ button:hover i {
 }
 
 .div-gauche{
-    background-color: #c0c0c0;
+    background-color: #e6e7e8;
     height: 100%;
     width: 100%;
     display: flex;
@@ -371,7 +372,7 @@ button:hover i {
 }
 
 .input-contact{
-    background-color: #c0c0c0;
+    background-color: #e6e7e8;
     border: none;
     border-bottom: 2px solid black;
     padding-top: 5%;
@@ -396,11 +397,11 @@ button:hover i {
 }
 
 .h-contact{
-    font-size: 45px;
+    font-size: 35px;
 }
 
 .h-2-contact{
-    font-size: 60px;
+    font-size: 55px;
 }
 
 .btn-contact{
@@ -466,6 +467,9 @@ button:hover i {
     .lienNonVoyant{
         display: none;
     }
+    .lienVoyant{
+        color: white;
+    }
     .home{
         position: unset;
         font-size: 20px;
@@ -513,7 +517,7 @@ button:hover i {
     }
     .img-isabel{
         right: unset;
-        width: 80%;
+        width: 90%;
         position: unset;
     }
     .container-isabel.active{
@@ -525,9 +529,6 @@ button:hover i {
         top: 80%;
         width: 100%;
     }
-    button{
-        margin-top: 5%;
-    }
     .container-contact{
         display: block;
         height: 90vh;
@@ -538,7 +539,7 @@ button:hover i {
     .div-droite{
         height: 32vh;
         flex-direction: column;
-        background-color: #c0c0c0;
+        background-color: #e6e7e8;
     }
     .icon-contact{
         font-size: 40px;
@@ -552,5 +553,16 @@ button:hover i {
     .element-contact{
         flex-direction: unset;
         flex-wrap: wrap;
+    }
+    .input-contact{
+        padding: 0;
+        border-bottom: 3px solid black;
+    }
+    .input-contact::placeholder{
+        font-size: 15px;
+    }
+    .paragraphe-about{
+        font-size: 20px;
+        padding: 10%;
     }
 }
