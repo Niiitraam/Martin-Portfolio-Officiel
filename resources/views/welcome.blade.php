@@ -17,6 +17,6 @@
     @include('pages/white')
     @include('pages/contact')
 
-    <script src="{{secure_asset("js/main.js")}}"></script>
+    <script src="{{asset("js/main.js")}}"></script>
 </body>
 </html>

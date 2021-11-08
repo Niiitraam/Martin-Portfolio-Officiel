@@ -30,6 +30,27 @@ function changeNon(i){
     tableauNonVoyant[i].style.opacity = '0';
 }
 
+var test = document.querySelector('.ul-navbar');
+
+tableauVoyant.forEach((element, index) =>{
+    element.addEventListener('click', function(){
+        ferme(index);
+    })
+})
+
+function ferme(i){
+    test.style.display = 'none'
+    setTimeout(() => {
+        if(test.matches('.ouverture-navbar')){
+            test.style.display = ''
+            test.classList.remove('ouverture-navbar')
+        }
+        // else {
+        //     test.style.display = ''
+        // }
+    }, 1000);
+}
+
 // reveal-navbar
 
 const ratio = 0.5

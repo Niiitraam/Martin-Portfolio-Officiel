@@ -91,6 +91,7 @@ ul li{
 .lienVoyant{
     background: transparent;
     color: white;
+    opacity: 1 !important;
 }
 
 .lienNonVoyant{
@@ -189,7 +190,7 @@ a.button-home:hover i {
 .h-nom{
     color: white;
     font-size: 25px;
-    padding-bottom: 3%;
+    padding-bottom: 10%;
 }
 
 .span-nom{
@@ -230,8 +231,8 @@ a.button-home:hover i {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 52%;
+    left: 21%;
     z-index: 2;
 }
 
@@ -514,6 +515,21 @@ a.button-home:hover i {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .p-service{
+        font-size: 13px;
+    }
+    .titre-service{
+        font-size: 20px;
+    }
+    .github{
+        display: none;
+    }
+    .linkedin{
+        display: none;
+    }
+    .instagram{
+        display: none;
     }
     .img-isabel{
         right: unset;
