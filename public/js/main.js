@@ -30,26 +30,26 @@ function changeNon(i){
     tableauNonVoyant[i].style.opacity = '0';
 }
 
-var test = document.querySelector('.ul-navbar');
+// var test = document.querySelector('.ul-navbar');
 
-tableauVoyant.forEach((element, index) =>{
-    element.addEventListener('click', function(){
-        ferme(index);
-    })
-})
+// tableauVoyant.forEach((element, index) =>{
+//     element.addEventListener('click', function(){
+//         ferme(index);
+//     })
+// })
 
-function ferme(i){
-    test.style.display = 'none'
-    setTimeout(() => {
-        if(test.matches('.ouverture-navbar')){
-            test.style.display = ''
-            test.classList.remove('ouverture-navbar')
-        }
-        // else {
-        //     test.style.display = ''
-        // }
-    }, 1000);
-}
+// function ferme(i){
+//     test.style.display = 'none'
+//     setTimeout(() => {
+//         if(test.matches('.ouverture-navbar')){
+//             test.style.display = ''
+//             test.classList.remove('ouverture-navbar')
+//         }
+//         // else {
+//         //     test.style.display = ''
+//         // }
+//     }, 1000);
+// }
 
 // reveal-navbar
 
@@ -84,7 +84,6 @@ var githubNon = document.querySelector('.githubNonVoyant');
 
 const handleIntersect = function(entries, observer) {
     entries.forEach(function(entry) {
-        if(window.matchMedia("(min-width: 600px)").matches){
             if (entry.intersectionRatio > ratio) {
                 home.style.color = "black";
                 homeNon.style.color = "white";
@@ -113,7 +112,8 @@ const handleIntersect = function(entries, observer) {
                 github.style.color = "black";
                 githubNon.style.color = "white";
                 githubNon.style.backgroundColor = "black";
-            }else{
+            }
+                else{
                 home.style.color = "white";
                 homeNon.style.color = "black";
                 homeNon.style.backgroundColor = "white";
@@ -142,12 +142,7 @@ const handleIntersect = function(entries, observer) {
                 githubNon.style.color = "black";
                 githubNon.style.backgroundColor = "white";
             }
-        }
-        else{
-            console.log('x')
-        }
     })
-
 }
 
 const observer = new IntersectionObserver(handleIntersect,options)
@@ -186,14 +181,3 @@ function slidePrecedente(){
 }
 
 precedant.addEventListener('click', slidePrecedente);
-
-// ouverture navbar
-
-var openMenu = document.querySelector('.openMenu');
-var ulNavbar = document.querySelector('.ul-navbar');
-
-openMenu.addEventListener('click', open);
-
-function open(){
-    ulNavbar.classList.toggle('ouverture-navbar');
-}

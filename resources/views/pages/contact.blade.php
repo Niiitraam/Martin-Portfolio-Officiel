@@ -19,4 +19,21 @@
             <p class="espacement-contact">martinmdvld@gmail.com</p>
         </div>
     </div>
+    <div class="div-droite-phone">
+        <div class="div-phone-reseaux">
+            <div class="placement-reseaux-contact">
+                <div class="element-du-haut">
+                    <i class="fas fa-phone icon-contact"></i>
+                    <p class="espacement-contact">+32 471 52 55 27</p>
+                </div>
+                <div class="element-du-haut">
+                    <i class="fas fa-at icon-contact"></i>
+                    <p class="espacement-contact">martinmdvld@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="prenom-contact">
+            <p>Martin Manderveld</p>
+        </div>
+    </div>
 </div>

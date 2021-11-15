@@ -283,15 +283,6 @@ a.button-home:hover i {
 
 /* parcours */
 
-.container-parcours{
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-}
-
-
-/* fin parcours */
-
 .white{
     background-color: white;
     width: 100%;
@@ -329,10 +320,12 @@ a.button-home:hover i {
 
 .element-gauche{
     padding-right: 3%;
+    width: 50%;
 }
 
 .element-droite{
     padding-left: 3%;
+    width: 50%;
 
 }
 
@@ -346,6 +339,10 @@ a.button-home:hover i {
 
 /* fin service */
 /* contact */
+
+.div-droite-phone{
+    display: none;
+}
 
 .container-contact{
     height: 100vh;
@@ -379,7 +376,6 @@ a.button-home:hover i {
     padding-top: 5%;
     margin-top: 5%;
     font-size: 25px;
-    color: white;
 }
 
 .input-contact:focus{
@@ -413,7 +409,6 @@ a.button-home:hover i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
     justify-content: center;
 }
 
@@ -431,74 +426,39 @@ a.button-home:hover i {
 /* fin contact */
 
 @media screen and (min-device-width: 150px) and (max-device-width:600px){
-    .container-navbar{
-        background-color: black;
-        color: #ffffff;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 10vh;
-    }
-    .ul-navbar{
-        height: 60vh;
-        position: fixed;
-        top: 10vh;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #000000;
-        transition: top 1s ease;
-        display: none;
-        padding-left: 0;
-        transition: 1s;
-    }
-    .li-nav{
-        padding-top: 4%;
-        padding-bottom: 4%;
-        text-align: center;
-    }
-    .ouverture-navbar{
-        display: flex;
-        transition: 1s;
-    }
-    .lienNonVoyant{
-        display: none;
-    }
     .lienVoyant{
         color: white;
     }
     .home{
-        position: unset;
-        font-size: 20px;
+        font-size: 18px;
+        top: 4%;
+        left: 5%;
     }
     .contact{
-        position: unset;
-        font-size: 20px;
+        font-size: 18px;
+        top: 4%;
+        right: 5%;
     }
     .parcours{
-        position: unset;
-        font-size: 20px;
+        font-size: 18px;
+        bottom: 4%;
+        left: 5%;
     }
     .about{
-        position: unset;
-        font-size: 20px;
+        font-size: 18px;
+        bottom: 4%;
+        left: 44%;
     }
     .portfolio{
-        position: unset;
-        font-size: 20px;
-        transform: rotate(0deg);
+        font-size: 18px;
+        left: -2%;
     }
     .services{
-        position: unset;
-        font-size: 20px;
-        transform: rotate(0deg);
+        font-size: 18px;
+        right: -2%;
     }
     nav .ul-navbar li a{
-        padding: 15px;
+        padding: 2px;
         text-decoration: none;
         text-transform: uppercase;
         color: #ffffff;
@@ -523,13 +483,18 @@ a.button-home:hover i {
         font-size: 20px;
     }
     .github{
-        display: none;
+        font-size: 20px;
+        bottom: 4%;
+        right: 15%;
     }
     .linkedin{
-        display: none;
+        font-size: 20px;
+        bottom: 4%;
+        right: 10%;
     }
     .instagram{
-        display: none;
+        font-size: 20px;
+        bottom: 4%;
     }
     .img-isabel{
         right: unset;
@@ -550,12 +515,60 @@ a.button-home:hover i {
         height: 90vh;
     }
     .div-gauche{
-        height: 58vh;
+        height: 65vh;
     }
     .div-droite{
-        height: 32vh;
-        flex-direction: column;
+        display: none;
+    }
+    .div-droite-phone{
+        height: 35vh;
         background-color: #e6e7e8;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .element-du-haut{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .placement-reseaux-contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .espacement-contact{
+        margin-bottom: 0;
+        font-size: 10px;
+    }
+    .prenom-contact{
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 50%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .btn-contact{
+        padding-left: 5%;
+        padding-right: 5%;
+        border: 1px solid black;
+        border-radius: 5%;
+        background-color: #e6e7e8;
+    }
+    .btn-contact:hover{
+        background-color: black;
+        color: white;
+        border-radius: 5%;
+    }
+    .div-phone-reseaux{
+        width: 50%;
+    }
+    .div-form{
+        width: 50%;
     }
     .icon-contact{
         font-size: 40px;
@@ -566,10 +579,6 @@ a.button-home:hover i {
     .h2-contact{
         font-size: 35px;
     }
-    .element-contact{
-        flex-direction: unset;
-        flex-wrap: wrap;
-    }
     .input-contact{
         padding: 0;
         border-bottom: 3px solid black;
@@ -579,6 +588,6 @@ a.button-home:hover i {
     }
     .paragraphe-about{
         font-size: 20px;
-        padding: 10%;
+        padding: 11%;
     }
 }

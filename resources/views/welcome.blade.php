@@ -12,7 +12,6 @@
     @include('partial/navbar')
     @include('pages/home')
     @include('pages/about')
-    @include('pages/parcours')
     @include('pages/service')
     @include('pages/white')
     @include('pages/contact')
