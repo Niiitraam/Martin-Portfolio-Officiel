@@ -1,8 +1,8 @@
 <nav class="container-navbar">
     <ul class="ul-navbar">
         <li class="li-nav">
-            <a href="/" class="home lienVoyant homeVoyant">Home</a>
-            <a href="/" class="home lienNonVoyant homeNonVoyant">Home</a>
+            <a href="/" class="home lienVoyant homeVoyant">YamaTech</a>
+            <a href="/" class="home lienNonVoyant homeNonVoyant">YamaSpot</a>
         </li>
         <li class="li-nav">
             <a href="#about" class="about lienVoyant aboutVoyant">About</a>

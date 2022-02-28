@@ -13,7 +13,7 @@
                     </span>
                 </a>
             </div>
-            <img src="{{asset('image/mockup-isabel.png')}}" class="img-isabel" alt="">
+            <img src="{{secure_asset('image/mockup-isabel.png')}}" class="img-isabel" alt="">
         </div>
         <div class="container-isabel" style="background-color: #8a1836">
             <div class="div-slide">
@@ -27,7 +27,7 @@
                     </span>
                 </a>
             </div>
-            <img src="{{asset('image/mockup-isabel.png')}}" class="img-isabel" alt="">
+            <img src="{{secure_asset('image/mockup-isabel.png')}}" class="img-isabel" alt="">
         </div>
     </div>
     <div class="cont-btn">
